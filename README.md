@@ -1,3 +1,16 @@
+
+# Apify notes
+We forked C++ BSON because we need to enlarge the buffer limit to 32MB for BSON.
+[This issue](https://github.com/mongodb-js/bson-ext/issues/42) needs to be fixed to be able to use the forked repo in the apify-core repository.
+
+Meantime we are publishing this forked repo in the @apify-packages NPM repository.
+
+If we need to merge changes from [original repo](https://github.com/mongodb-js/bson-ext):
+1) Merge changes into this repository.
+2) Run `npm install`
+3) Run `npm publish --tag latest`
+3) Install updated version in apify-core repository
+
 # BSON parser
 
 BSON is short for Bin­ary JSON and is the bin­ary-en­coded seri­al­iz­a­tion of JSON-like doc­u­ments. You can learn more about it in [the specification](http://bsonspec.org).
