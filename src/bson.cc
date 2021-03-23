@@ -1287,6 +1287,8 @@ NAN_METHOD(BSON::New) {
       if (NanHas(options, "maxBSONSize") &&
           NanGet(options, "maxBSONSize")->IsNumber()) {
         maxBSONSize = (size_t)NanTo<int32_t>(NanGet(options, "maxBSONSize"));
+        if (maxBSONSize > MAX_BSON_SIZE)
+          return Nan::ThrowError("maxBSONSize cannot be larger than MAX_BSON_SIZE");
       }
     }
 
