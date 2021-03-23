@@ -282,7 +282,7 @@ private:
   size_t count;
 };
 
-const size_t MAX_BSON_SIZE(1024 * 1024 * 32);
+const size_t MAX_BSON_SIZE(1024 * 1024 * 33);
 
 void ThrowAllocatedStringException(size_t allocationSize, const char *format, ...);
 
