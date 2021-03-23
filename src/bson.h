@@ -282,7 +282,7 @@ private:
   size_t count;
 };
 
-const size_t MAX_BSON_SIZE(1024 * 1024 * 17);
+const size_t MAX_BSON_SIZE(1024 * 1024 * 32);
 
 class DataStream {
 public:
