@@ -15,7 +15,6 @@
             'OTHER_CFLAGS': [
               '-stdlib=libc++',
               '-O3',
-              '-msse2',
               '-ffast-math',
               '-fexceptions'
             ]
